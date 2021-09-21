@@ -24,7 +24,8 @@ app.get("/",function (req,res){
 
   res.render('home', {
     "posts": posts
-  })
+
+  });
 
 });
 
@@ -73,10 +74,7 @@ app.get("/posts/:postTitle", function(req,res){
         "postContent": postContent
       })
 
-    } else {
-      console.log("match not found");
-      console.log(requestedPost);
-    }
+    } 
 
   });
 
